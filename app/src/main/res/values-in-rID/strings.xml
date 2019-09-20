@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BinaKarir</string>
+    <string name="event_this_month" translatable="false">Acara Tiap Bulan</string>
+    <string name="Artikel" translatable="false">Artikel</string>
+    <string name="Terpopuler" translatable="false">Terpopuler</string>
+    <string name="Psikologi" translatable="false">Psikologi</string>
+    <string name="Porenting" translatable="false">Porenting</string>
+    <string name="action_sign_in_short" translatable="false">Mendaftar</string>
+    <string name="minimum_password" translatable="false">Password Terlalu Sedikit, Minimal Password 6</string>
+</resources>

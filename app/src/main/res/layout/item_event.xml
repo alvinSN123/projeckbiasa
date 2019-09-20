@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_event"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TV_judul_event_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/TV_tanggal_event_item"
+                android:layout_width="wrap_content"
+                android:text="27-07-2019"
+                android:textSize="10dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/TV_lokasi_event_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="jakarta"
+                android:textColor="@android:color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:id="@+id/IV_img_event_item"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_location"
+                android:layout_toLeftOf="@id/TV_lokasi_event_item"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

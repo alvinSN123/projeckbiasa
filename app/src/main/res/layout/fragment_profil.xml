@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ProfilFragment">
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_chat"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/cirImg_logo_user"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logobulet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:id="@+id/TV_fp_pendaftaran"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_pendaftaran"
+            android:text="Pendaftaran"
+            android:gravity="center"
+            android:textColor="@color/hitam"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/Relative_layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/cirImg_logo_user"
+            android:background="@drawable/bg_profile2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/cirImg_photo_profile"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_account_circle_white"
+                />
+
+            <TextView
+                android:id="@+id/txt_name_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_name"
+                android:textColor="@color/putih1"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/cirImg_photo_profile"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/txt_email_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_email"
+                android:textColor="@color/putih1"
+                android:textStyle="bold"
+                android:layout_below="@+id/txt_name_profile"
+                android:layout_marginLeft="130dp"
+
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relative_layout_payment"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/Relative_layout_profile"
+            android:background="@drawable/bg_profile2"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:id="@+id/Name_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Status"
+                android:textColor="@color/putih1"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/Logo_time"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ic_access_time_black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Logo_time"
+                android:layout_marginLeft="35dp"
+                android:text="@string/Wait"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textColor="@color/putih1"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/Img_logo_progres"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Name_payment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_account_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prores"
+                android:layout_below="@+id/Img_logo_progres"
+                android:textColor="@color/putih1"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/Img_logo_done"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/ic_check_box_"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih1"
+                android:textStyle="bold"
+                android:text="@string/done"
+                android:layout_below="@id/Img_logo_done"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="49dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Relative_layout_payment"
+            android:padding="10dp"
+            android:background="@drawable/bg_profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+<TextView
+    android:id="@+id/TV_user_my_profile"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:text="@string/my_profile"
+    android:gravity="bottom"
+    android:textColor="@color/hitam"
+    android:layout_alignParentTop="true"
+    android:background="@color/putih1"
+    android:drawableEnd="@drawable/ic_navigate_next"
+    />
+            <View
+                android:id="@+id/V1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hijau1"
+                android:layout_below="@id/TV_user_my_profile"/>
+            <TextView
+                android:id="@+id/TV_user_refund"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/refund"
+                android:gravity="bottom"
+                android:textColor="@color/hitam"
+                android:background="@color/putih1"
+                android:layout_below="@+id/V1"
+                android:drawableEnd="@drawable/ic_navigate_next"
+                />
+            <View
+                android:id="@+id/V2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hijau1"
+                android:layout_below="@id/TV_user_refund"/>
+
+            <TextView
+                android:id="@+id/TV_user_point"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/point"
+                android:gravity="bottom"
+                android:textColor="@color/hitam"
+                android:background="@color/putih1"
+                android:layout_below="@id/V2"
+                android:drawableEnd="@drawable/ic_navigate_next"
+                />
+            <View
+                android:id="@+id/V3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hijau1"
+                android:layout_below="@id/TV_user_point"/>
+
+            <TextView
+                android:id="@+id/TV_user_pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Pembayaran"
+                android:gravity="bottom"
+                android:textColor="@color/hitam"
+                android:background="@color/putih1"
+                android:layout_below="@id/V3"
+                android:drawableEnd="@drawable/ic_navigate_next"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:id="@+id/btnsignout"/>
+    <!--</ScrollView>-->
+</FrameLayout>
+</ScrollView>

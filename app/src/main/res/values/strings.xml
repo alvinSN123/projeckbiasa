@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">BinaKarir</string>
+
+    <string name="event_this_month">Event This Month</string>
+    <string name="Artikel">Artikel</string>
+    <string name="Terpopuler">Most Popular</string>
+    <string name="Psikologi">Psychology</string>
+    <string name="Porenting">Porenting</string>
+    <string name="prompt_password" translatable="false">Old Password</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed" translatable="false">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email" translatable="false">Change Email</string>
+    <string name="change_password" translatable="false">Change Password</string>
+    <string name="send_password_reset_email" translatable="false">Send Password reset email</string>
+    <string name="remove_user" translatable="false">Remove user</string>
+    <string name="new_pass" translatable="false">New Password</string>
+    <string name="title_activity_profile" translatable="false">Firebase</string>
+    <string name="title_activity_login" translatable="false">Sign in</string>
+    <string name="hint_email" translatable="false">Email</string>
+    <string name="hint_password" translatable="false">Password</string>
+    <string name="hint_name" translatable="false">Fullname</string>
+    <string name="btn_login" translatable="false">LOGIN</string>
+    <string name="btn_link_to_register" translatable="false">Not a member? Get registered now!</string>
+    <string name="btn_link_to_login" translatable="false">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password" translatable="false">ResetPasswordActivity</string>
+    <string name="btn_forgot_password" translatable="false">Forgot your password?</string>
+    <string name="btn_reset_password" translatable="false">Reset Password</string>
+    <string name="btn_back" translatable="false"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email" translatable="false">New Email</string>
+    <string name="btn_change" translatable="false">Change</string>
+    <string name="btn_send" translatable="false">Send</string>
+    <string name="btn_remove" translatable="false">Remove</string>
+    <string name="btn_sign_out" translatable="false">Sign Out</string>
+    <string name="lbl_forgot_password" translatable="false">Forgot password?</string>
+    <string name="forgot_password_msg" translatable="false">We just need your registered Email Id to sent you password reset instructions.</string>
+
+    <string name="profile_name" translatable="false">User</string>
+    <string name="profile_email" translatable="false">User@gmail.com</string>
+    <string name="Wait" translatable="false">Waiting\nFor Payment</string>
+    <string name="prores" translatable="false">On Progres</string>
+    <string name="done" translatable="false">Done</string>
+    <string name="ubah" translatable="false">Ubah Photo</string>
+    <string name="username" translatable="false">Ubah Photo</string>
+    <string name="aturpassword" translatable="false">Ubah Photo</string>
+    <string name="tanggal" translatable="false">Ubah Photo</string>
+    <string name="email_myprofile" translatable="false">Ubah Photo</string>
+    <string name="telepon" translatable="false">Telepon</string>
+    <string name="atasnama" translatable="false">Atas Nama</string>
+    <string name="transfer" translatable="false">Jumlah Transfer</string>
+    <string name="file" translatable="false">Attact File</string>
+    <string name="yourpoint" translatable="false">Your Point</string>
+    <string name="kumpulkanpoint" translatable="false">Kumpulkan Point Anda Hingga Mencapai 1000\nPoint, Maka Anda Berhak Mendapatkan\nPotongan Sebesar 10% Untuk Pembayaran\nWorkshop</string>
+    <string name="my_profile" translatable="false">My Profile</string>
+    <string name="refund" translatable="false">Refund</string>
+    <string name="point" translatable="false">Point</string>
+    <string-array name="language_option">
+        <item>Indonesian</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="Bank">
+        <item>BNI</item>
+        <item>BRI</item>
+        <item>BCA</item>
+        <item>MANDIRI</item>
+        <item>Cimb Niaga</item>
+        <item>BTN</item>
+    </string-array>
+</resources>

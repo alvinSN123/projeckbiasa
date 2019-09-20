@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pembayaran">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_chat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_chat"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_notification"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/img_chat"
+        />
+
+    <ImageView
+        android:id="@+id/cirImg_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logobulet"
+        />
+
+    <EditText
+        android:id="@+id/ET_emailPembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cirImg_logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/abu1"
+        android:background="@drawable/background_btn"
+        />
+
+
+    <EditText
+        android:id="@+id/ET_atasnama_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ET_emailPembayaran"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:hint="Atas Nama"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/abu1"
+        android:background="@drawable/background_btn"
+        />
+
+
+
+    <EditText
+        android:id="@+id/ET_transferJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:hint="Transfer Sejumlah"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/abu1"
+        android:background="@drawable/background_btn"
+        android:layout_below="@id/ET_atasnama_pembayaran"
+        />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/ET_transferJumlah"
+        android:text="Tanggal Transfer"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/hitam"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        />
+    <ImageButton
+        android:id="@+id/Btn_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/ET_transferJumlah"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/ET_date_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="  /  /"
+        android:layout_toRightOf="@id/txt_date"
+        android:layout_toLeftOf="@id/Btn_tanggal"
+        android:layout_below="@id/ET_transferJumlah"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/Txt_payment_method_confrim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payement\nMethod"
+        android:layout_below="@+id/ET_date_pembayaran"
+        android:textSize="18sp"
+        android:textColor="@color/hitam"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/Sp_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/Bank"
+        android:layout_toRightOf="@+id/Txt_payment_method_confrim"
+        android:layout_below="@+id/ET_date_pembayaran"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/ET_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:padding="5dp"
+        android:hint="Notes"
+        android:background="@drawable/bg_garis"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/Sp_pembayaran"/>
+
+    <TextView
+        android:id="@+id/txt_bukti_pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bukti\nPembayaran"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="65dp"
+        android:textColor="@color/hitam"
+        android:layout_below="@id/ET_notes"/>
+    <ImageView
+        android:id="@+id/image_bukti_TF"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/ET_notes"
+        android:layout_toRightOf="@id/txt_bukti_pembayaran" />
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hitam"
+        android:layout_below="@id/image_bukti_TF"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_bukti_pembayaran"/>
+    <Button
+        android:id="@+id/Btn_choosefile_pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File"
+        android:textAllCaps="false"
+        android:layout_marginTop="65dp"
+        android:layout_below="@id/ET_notes"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"/>
+    <Button
+        android:id="@+id/Btn_send_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textColor="@color/putih1"
+        android:textAllCaps="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/View1"
+        android:background="@drawable/bg_button"/>
+
+</RelativeLayout>
+</ScrollView>

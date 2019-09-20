@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.BerandaFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_fragmenberanda"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:id="@+id/Rl1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/logo_binakarir"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logobinakarir"/>
+
+    <ImageView
+        android:id="@+id/img_setting"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_settings"/>
+
+    <ImageView
+        android:id="@+id/img_help"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_setting"
+        android:src="@drawable/ic_help_black_24dp"/>
+
+    <ImageView
+        android:id="@+id/img_chat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_chat"
+        android:layout_toLeftOf="@id/img_help"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rl1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/beranda_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:focusableInTouchMode="true"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/Rl3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Rl2">
+    <TextView
+        android:id="@+id/judul_event_this_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event_this_month"
+        android:textSize="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/Recyclerview_event"
+        android:layout_below="@id/judul_event_this_month"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rl3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Artikel"
+            android:textSize="15dp"
+            android:id="@+id/TV_judul_artikel"/>
+
+        <TextView
+            android:id="@+id/TV_artikel_terpopuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Terpopuler"
+            android:layout_below="@id/TV_judul_artikel"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/Recyclerview_artikel_terpopuler"
+            android:layout_below="@id/TV_artikel_terpopuler"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HRD"
+            android:id="@+id/TV_artikel_HRD"
+            android:layout_below="@id/Recyclerview_artikel_terpopuler"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/Recylerview_artikel_HRD"
+            android:layout_below="@id/TV_artikel_HRD"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Psikologi"
+            android:id="@+id/TV_artikel_psikologi"
+            android:layout_below="@id/Recylerview_artikel_HRD"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/Recylerview_artikel_psikologi"
+            android:layout_below="@id/TV_artikel_psikologi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Porenting"
+            android:id="@+id/TV_artikel_porenting"
+            android:layout_below="@id/Recylerview_artikel_psikologi"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/Recylerview_artikel_porenting"
+            android:layout_below="@id/TV_artikel_porenting"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rl4">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="E-book"
+    android:textSize="15dp"
+    android:id="@+id/TV_E_book"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/Recyclerview_E_book"
+            android:layout_below="@id/TV_E_book"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl6"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/Rl5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/Recyclerview_quiz"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Rl7"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/Rl6">
+
+    </RelativeLayout>
+</RelativeLayout>
